@@ -1,13 +1,12 @@
 let http = require("http")
 const users = [
-    { id: 1, name: '边龙' },
-    { id: 2, name: '张三' },
-    { id: 3, name: '李四' },
+    { id: 1, name: 'jack' },
+    { id: 2, name: 'tom' },
+    { id: 3, name: 'mary' },
 ]
 let server = http.createServer(function(req, res) {
     console.log("req", req.url)
         // 为了防止中文乱码问题，需要设置响应头，
-    res.setHeader('Content-Type', 'text/html; charset=utf-8')
     res.setHeader('Access-Control-Allow-Origin', '*')
 
     if (req.url === '/api/users') {
