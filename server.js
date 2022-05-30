@@ -8,7 +8,6 @@ let server = http.createServer(function(req, res) {
     console.log("req", req.url)
         // 为了防止中文乱码问题，需要设置响应头，
     res.setHeader('Access-Control-Allow-Origin', '*')
-
     if (req.url === '/api/users') {
         res.end(JSON.stringify(users))
     } else {
