@@ -1,8 +1,9 @@
 let http = require("http")
 const users = [
-    { id: 11, name: 'bian' },
-    { id: 22, name: 'long' },
-    { id: 33, name: 'marry' },
+    { id: 1, name: 'bian' },
+    { id: 2, name: 'long' },
+    { id: 3, name: 'marry' },
+    { id: 4, name: 'email' },
 ]
 let server = http.createServer(function(req, res) {
     console.log("req", req.url)
