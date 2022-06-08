@@ -3,7 +3,7 @@ const users = [
     { id: 1, name: 'bian' },
     { id: 2, name: 'long' },
     { id: 3, name: 'marry' },
-    { id: 4, name: 'email' },
+    { id: 4, name: 'nodemailer' }
 ]
 let server = http.createServer(function(req, res) {
     console.log("req", req.url)
